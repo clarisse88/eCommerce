@@ -93,9 +93,9 @@ body {
 }
 
 .logo h1 img {
-  width: 300px;
-  height: 300px;
-  margin-top: -100px;
+  width: 130px;
+  height: 60px;
+  margin-top: 10px;
 }
 .logo h1 a {
   color: #999;
@@ -111,8 +111,8 @@ body {
   border: 1px solid #ddd;
   float: right;
   font-size: 18px;
-  margin-top: 40px;
-  padding: 10px;
+  margin-top: 20px;
+  padding: 10px 10px;
   position: relative;
 }
 .shopping-item a {
@@ -165,6 +165,7 @@ body {
 .mainmenu-area ul.navbar-nav li.active a {
   background: #ce0303;
   color: #fff;
+  transition: 1s;
 }
 .mainmenu-area .nav > li > a:focus {
   color: #fff;
@@ -382,6 +383,7 @@ body {
   font-weight: 200;
   padding: 20px 10px;
   text-align: center;
+  transition: 0.5s;
 }
 .single-promo i {
   font-size: 50px;
@@ -389,7 +391,8 @@ body {
 
 .single-promo:hover {
   color: #fff;
-  background: #222;
+  background: rgba(0,0,0,1);
+
 }
 .promo1 {
   background: #5a88ca;
