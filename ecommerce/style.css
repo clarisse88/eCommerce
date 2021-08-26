@@ -143,6 +143,7 @@ body {
 .shopping-item:hover {
   background: none repeat scroll 0 0 #5a88ca;
   border-color: #5a88ca;
+  transition: 0.5s;
 }
 .shopping-item:hover a {
   color: #fff;
@@ -161,12 +162,12 @@ body {
   padding: 20px;
 }
 
-.mainmenu-area ul.navbar-nav li:hover a,
-.mainmenu-area ul.navbar-nav li.active a {
+.mainmenu-area ul.navbar-nav li:hover a{
   background: #ce0303;
-  color: #fff;
-  transition: 1s;
+  color: rgb(0, 0, 0);
+  transition: 0.6s;
 }
+
 .mainmenu-area .nav > li > a:focus {
   color: #fff;
 }
@@ -201,14 +202,8 @@ body {
   font-size: 30px;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   line-height: 29px;
-  -moz-transition: all 0.45s ease;
-  -webkit-transition: all 0.45s ease;
-  -o-transition: all 0.45s ease;
-  -ms-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
 .block-slider img {
@@ -301,19 +296,19 @@ body {
   -webkit-border-radius: 17px;
   -moz-border-radius: 17px;
   border-radius: 17px;
-  -webkit-transition: all 1s ease;
+  /*-webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
+  -ms-transition: all 1s ease;*/
   transition: all 1s ease;
   margin-top: 10px;
   font-size: 14px;
 }
 .button-radius .icon {
-  -webkit-transition: all 1s ease-out;
+/*  -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;*/
   transition: all 1s ease-out;
   position: absolute;
   left: 2%;
@@ -333,10 +328,10 @@ body {
   text-align: center;
   line-height: 26px;
   float: left;
-  -webkit-transition: all 1s ease-out;
+  /*-webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;*/
   transition: all 1s ease-out;
 }
 
@@ -601,8 +596,9 @@ body {
 }
 .wid-view-more:hover {
   color: #fff;
-  background-color: #222;
+  background-color: rgb(0, 0, 0);
   text-decoration: none;
+  transition: 0.5s;
 }
 .single-product-widget {
   position: relative;
