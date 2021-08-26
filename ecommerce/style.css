@@ -26,6 +26,53 @@ img {
 .fix {
   overflow: hidden;
 }
+.login-form{
+
+  width: 400px;
+  height: 500px;
+  background: color(#fff);
+  border: 1px solid rgb(233, 232, 232);
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-top: 150px;
+  box-shadow: 5px 10px 18px #faf9f9ef;
+
+
+}
+.login-form input{
+
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+input[type="text"], input[type="password"], input[type="email"]{
+width: 250px;
+}
+input[type="submit"]{
+  background:black;
+}
+.loginText{
+  width:400px;
+  height:60px;
+  background:black;
+  border:1px solid transparent;
+  color:white;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: -150px;
+  margin-bottom: 100px;
+  
+
+}
+
 h1,
 h2,
 h3,
