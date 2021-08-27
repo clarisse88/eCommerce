@@ -1,3 +1,19 @@
+body {
+  padding-top: 80px;
+  position: relative;
+}
+
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
 .floatleft {
   float: left;
 }
@@ -29,7 +45,7 @@ img {
 .login-form{
 
   width: 400px;
-  height: 500px;
+  height: auto;
   background: color(#fff);
   border: 1px solid rgb(233, 232, 232);
   justify-content: center;
@@ -62,7 +78,7 @@ input[type="submit"]{
 .loginText{
   width:400px;
   height:60px;
-  background:black;
+  background:#5a88ca;
   border:1px solid transparent;
   color:white;
   text-align: center;
@@ -89,6 +105,11 @@ body {
   margin-top: 1000px;
 }
 .header-area {
+ margin-top:-80px;
+  z-index:1 ;
+  width:100%;
+  height: 50px;
+  position:fixed;
   background: none repeat scroll 0 0 #000000;
 }
 .header-area a {
@@ -131,14 +152,14 @@ body {
   text-align: center;
 }
 
-.mainmenu-area {
+/*.mainmenu-area {
   background: none repeat scroll 0 0 #000000;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   width: 100%;
   z-index: 999;
 }
-
+*/
 .logo h1 img {
   width: 130px;
   height: 60px;
@@ -155,7 +176,7 @@ body {
   color: #5a88ca;
 }
 .shopping-item {
-  border: 1px solid #ddd;
+  border: 1px solid transparent;
   float: right;
   font-size: 18px;
   margin-top: 20px;
@@ -186,10 +207,13 @@ body {
 .shopping-item i.fa {
   margin-left: 15px;
 }
+ .btn-danger{
+float: right;
+margin-left: 15px;
+}
 
 .shopping-item:hover {
-  background: none repeat scroll 0 0 #5a88ca;
-  border-color: #5a88ca;
+  background: none repeat scroll 0 0 #f3f4f5;
   transition: 0.5s;
 }
 .shopping-item:hover a {
@@ -593,6 +617,12 @@ body {
 .maincontent-area {
   padding-bottom: 50px;
   padding-top: 20px;
+}
+.textarea{
+  margin-left: 75px;
+  width: 250px;
+  height: 150px;
+  
 }
 
 .product-wid-title {
