@@ -1,3 +1,19 @@
+body {
+  padding-top: 80px;
+  position: relative;
+}
+
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
 .floatleft {
   float: left;
 }
@@ -26,6 +42,53 @@ img {
 .fix {
   overflow: hidden;
 }
+.login-form{
+
+  width: 400px;
+  height: auto;
+  background: color(#fff);
+  border: 1px solid rgb(233, 232, 232);
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-top: 150px;
+  box-shadow: 5px 10px 18px #faf9f9ef;
+
+
+}
+.login-form input{
+
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+input[type="text"], input[type="password"], input[type="email"]{
+width: 250px;
+}
+input[type="submit"]{
+  background:black;
+}
+.loginText{
+  width:400px;
+  height:60px;
+  background:#5a88ca;
+  border:1px solid transparent;
+  color:white;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: -150px;
+  margin-bottom: 100px;
+  
+
+}
+
 h1,
 h2,
 h3,
@@ -42,6 +105,11 @@ body {
   margin-top: 1000px;
 }
 .header-area {
+ margin-top:-80px;
+  z-index:1 ;
+  width:100%;
+  height: 50px;
+
   background: none repeat scroll 0 0 #000000;
 }
 .header-area a {
@@ -84,18 +152,18 @@ body {
   text-align: center;
 }
 
-.mainmenu-area {
+/*.mainmenu-area {
   background: none repeat scroll 0 0 #000000;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   width: 100%;
   z-index: 999;
 }
-
+*/
 .logo h1 img {
-  width: 300px;
-  height: 300px;
-  margin-top: -100px;
+  width: 130px;
+  height: 60px;
+  margin-top: 10px;
 }
 .logo h1 a {
   color: #999;
@@ -108,11 +176,11 @@ body {
   color: #5a88ca;
 }
 .shopping-item {
-  border: 1px solid #ddd;
+  border: 1px solid transparent;
   float: right;
   font-size: 18px;
-  margin-top: 40px;
-  padding: 10px;
+  margin-top: 20px;
+  padding: 10px 10px;
   position: relative;
 }
 .shopping-item a {
@@ -139,10 +207,14 @@ body {
 .shopping-item i.fa {
   margin-left: 15px;
 }
+ .btn-danger{
+float: right;
+margin-left: 15px;
+}
 
 .shopping-item:hover {
-  background: none repeat scroll 0 0 #5a88ca;
-  border-color: #5a88ca;
+  background: none repeat scroll 0 0 #f3f4f5;
+  transition: 0.5s;
 }
 .shopping-item:hover a {
   color: #fff;
@@ -161,11 +233,12 @@ body {
   padding: 20px;
 }
 
-.mainmenu-area ul.navbar-nav li:hover a,
-.mainmenu-area ul.navbar-nav li.active a {
+.mainmenu-area ul.navbar-nav li:hover a{
   background: #ce0303;
-  color: #fff;
+  color: rgb(0, 0, 0);
+  transition: 0.6s;
 }
+
 .mainmenu-area .nav > li > a:focus {
   color: #fff;
 }
@@ -200,14 +273,8 @@ body {
   font-size: 30px;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   line-height: 29px;
-  -moz-transition: all 0.45s ease;
-  -webkit-transition: all 0.45s ease;
-  -o-transition: all 0.45s ease;
-  -ms-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
 .block-slider img {
@@ -280,8 +347,6 @@ body {
 .block-slider .caption-group .primary {
   color: #1bd172;
 }
-.block-slider .caption-group .caption {
-}
 
 /*----------------------
 [10. Block top seller ]
@@ -302,19 +367,19 @@ body {
   -webkit-border-radius: 17px;
   -moz-border-radius: 17px;
   border-radius: 17px;
-  -webkit-transition: all 1s ease;
+  /*-webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
+  -ms-transition: all 1s ease;*/
   transition: all 1s ease;
   margin-top: 10px;
   font-size: 14px;
 }
 .button-radius .icon {
-  -webkit-transition: all 1s ease-out;
+/*  -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;*/
   transition: all 1s ease-out;
   position: absolute;
   left: 2%;
@@ -334,10 +399,10 @@ body {
   text-align: center;
   line-height: 26px;
   float: left;
-  -webkit-transition: all 1s ease-out;
+  /*-webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;*/
   transition: all 1s ease-out;
 }
 
@@ -382,6 +447,7 @@ body {
   font-weight: 200;
   padding: 20px 10px;
   text-align: center;
+  transition: 0.5s;
 }
 .single-promo i {
   font-size: 50px;
@@ -389,7 +455,8 @@ body {
 
 .single-promo:hover {
   color: #fff;
-  background: #222;
+  background: rgba(0,0,0,1);
+
 }
 .promo1 {
   background: #5a88ca;
@@ -489,8 +556,7 @@ body {
 .single-product {
   overflow: hidden;
 }
-.single-product:hover {
-}
+
 .single-product:hover .product-hover a.add-to-cart-link {
   top: 32%;
 }
@@ -552,6 +618,12 @@ body {
   padding-bottom: 50px;
   padding-top: 20px;
 }
+.textarea{
+  margin-left: 75px;
+  width: 250px;
+  height: 150px;
+  
+}
 
 .product-wid-title {
   font-family: raleway;
@@ -601,8 +673,9 @@ body {
 }
 .wid-view-more:hover {
   color: #fff;
-  background-color: #222;
+  background-color: rgb(0, 0, 0);
   text-decoration: none;
+  transition: 0.5s;
 }
 .single-product-widget {
   position: relative;
@@ -1083,8 +1156,7 @@ div.cart-collaterals ul.products li.product {
 .cart_totals table th {
   background: none repeat scroll 0 0 #f4f4f4;
 }
-.onsale {
-}
+
 div.cart-collaterals ul.products li.product .onsale {
   background: none repeat scroll 0 0 #5a88ca;
   color: #fff;
@@ -1103,8 +1175,7 @@ div.cart-collaterals ul.products li.product .price {
   margin-bottom: 10px;
   overflow: hidden;
 }
-.price > ins {
-}
+
 div.cart-collaterals ul.products li.product .price ins {
   color: #5a88ca;
   font-weight: 700;
